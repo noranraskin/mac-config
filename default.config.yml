@@ -6,7 +6,7 @@ configure_terminal: true
 configure_osx: true
 
 # Set to 'true' to configure the Dock via dockutil.
-configure_dock: false
+configure_dock: true
 dockitems_remove: []
 # - Launchpad
 # - TV
@@ -24,63 +24,81 @@ sudoers_custom_config: ''
 #   # Allow users in admin group to use sudo with no password.
 #   %admin ALL=(ALL) NOPASSWD: ALL
 
-dotfiles_repo: https://github.com/geerlingguy/dotfiles.git
+dotfiles_repo: https://github.com/noranraskin/dotfiles.git
 dotfiles_repo_accept_hostkey: true
-dotfiles_repo_local_destination: ~/Development/GitHub/dotfiles
+dotfiles_repo_local_destination: ~/Developer/dotfiles
 dotfiles_files:
   - .zshrc
+  - .gitconfig
   - .gitignore
-  - .inputrc
   - .osx
-  - .vimrc
 
 homebrew_installed_packages:
   # - ansible # Installed via Pip.
-  - autoconf
-  - bash-completion
-  - doxygen
-  - gettext
-  - gifsicle
-  - git
-  - github/gh/gh
   - go
-  - gpg
-  - httpie
-  - iperf
-  - libevent
-  - sqlite
-  - mcrypt
-  - nmap
-  - node
-  - nvm
-  - php
-  - ssh-copy-id
-  - cowsay
-  - readline
-  - openssl
-  - pv
-  - wget
-  - wrk
-  - zsh-history-substring-search
+  - gh
+  - fish
+  - mosh
+  - tmux
 
 homebrew_taps:
   - homebrew/core
   - homebrew/cask
+  - homebrew/cask-drivers
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
-  - chromedriver
-  - docker
-  - dropbox
-  - firefox
+  # Browsers
   - google-chrome
+  - firefox
+  - brave-browser
+  - tor-browser
+  - folx
+  # Media playback
+  - vlc
+  - spotify
+  # Communication
+  - discord
+  - whatsapp
+  - zoom
+  - skype
+  # Media creation
+  - adobe-creative-cloud
+  - obs
   - handbrake
-  - licecap
-  - sequel-ace
-  - slack
+  # Text editors and IDEs
+  - intellij-idea
+  - goland
+  - clion
+  - pycharm
+  - visual-studio-code
   - sublime-text
+  - atom
+  # Other dev stuff
+  - arduino
+  - postman
+  - docker
   - transmit
-  - vagrant
+  # Office apps
+  - microsoft-word
+  - microsoft-powerpoint
+  - microsoft-excel
+  # Games
+  - parsec
+  - minecraft
+  - league-of-legends
+  # Utilities
+  - scroll-reverser
+  - daisydisk
+  - nextcloud
+  - synergy
+  - cyberghost-vpn
+  - steelseries-exactmouse-tool
+  # Quicklook
+  - qlmarkdown
+  - qlstephen
+  - quicklook-json
+  - qlcolorcode
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps: []
@@ -110,7 +128,7 @@ pip_packages: []
 #   version: "0.16.3" # default: N/A
 
 # Set to 'true' to configure Sublime Text.
-configure_sublime: false
+configure_sublime: true
 sublime_base_path: '~/Library/Application Support/Sublime Text'
 sublime_config_path: "Packages/User"
 sublime_package_control:
