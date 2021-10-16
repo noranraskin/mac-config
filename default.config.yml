@@ -106,7 +106,13 @@ homebrew_cask_apps:
   - qlcolorcode
 
 # See `geerlingguy.mas` role documentation for usage instructions.
-mas_installed_apps: []
+mas_installed_apps:
+  - 497799835   # Xcode
+  - 1352778147  # Bitwarden
+  - 1319778037  # iStat Menus
+  - 441258766   # Magnet
+  - 409201541   # Pages
+  - 409183694   # Keynote
 mas_email: ""
 mas_password: ""
 
