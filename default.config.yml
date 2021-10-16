@@ -84,6 +84,7 @@ homebrew_cask_apps:
   - postman
   - docker
   - transmit
+  - sf-symbols
   # Office apps
   - microsoft-word
   - microsoft-powerpoint
