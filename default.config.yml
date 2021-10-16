@@ -94,6 +94,7 @@ homebrew_cask_apps:
   - minecraft
   - league-of-legends
   # Utilities
+  - carbon-copy-cloner
   - scroll-reverser
   - daisydisk
   - nextcloud
