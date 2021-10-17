@@ -65,6 +65,7 @@ homebrew_installed_packages:
   - fish
   - mosh
   - tmux
+  - wget
   # Python
   - python@3.7
   - python@3.8
