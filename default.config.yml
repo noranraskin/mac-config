@@ -7,15 +7,40 @@ configure_osx: true
 
 # Set to 'true' to configure the Dock via dockutil.
 configure_dock: true
-dockitems_remove: []
-# - Launchpad
-# - TV
-# - Podcasts
-# - 'App Store'
-dockitems_persist: []
-# - name: "Sublime Text"
-#   path: "/Applications/Sublime Text.app/"
-#   pos: 5
+dockitems_remove:
+  - FaceTime
+  - Maps
+  - Photos
+  - Contacts
+  - Reminders
+  - Notes
+  - Podcasts
+  - TV
+dockitems_persist:
+  - name: "Launchpad"
+    path: "/Applications/Launchpad.app"
+    pos: 1
+  - name: "Safari"
+    path: "/Applications/Safari.app"
+    pos: 2
+  - name: "Google Chrome"
+    path: "/Applications/Google Chrome.app"
+    pos: 3
+  - name: "Firefox"
+    path: "/Applications/Firefox.app"
+    pos: 4
+  - name: "Xcode"
+    path: "/Applications/Xcode.app"
+    pos: 10
+  - name: "Sublime Text"
+    path: "/Applications/Sublime Text.app"
+    pos: 11
+  - name: "Terminal"
+    path: "/Applications/Terminal.app"
+    pos: 12
+  - name: "System Preferences"
+    path: "/Applications/System Preferences.app"
+    pos: 13
 
 configure_sudoers: false
 sudoers_custom_config: ''
