@@ -26,3 +26,11 @@
     - defaults write com.apple.terminal 'Startup Window Settings' -string JJG-Term
   changed_when: false
   when: "'JJG-Term' not in terminal_theme.stdout"
+
+- name: Ensure fish is default login shell.
+  vars:
+    the_user: "{{ ansible_user_id }}"
+  become: yes
+  user:
+    name: "{{ the_user }}"
+    shell: "/usr/local/bin/fish"
