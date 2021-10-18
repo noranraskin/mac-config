@@ -68,6 +68,8 @@ homebrew_installed_packages:
   - wget
   - google-cloud-sdk
   - kubectl
+  - miniconda
+  - nginx
   # Python
   - python@3.7
   - python@3.8
