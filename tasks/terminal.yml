@@ -34,3 +34,21 @@
   user:
     name: "{{ the_user }}"
     shell: "/usr/local/bin/fish"
+
+- name: Check if oh-my-fish is already installed.
+  stat:
+    path: /Users/noran/.local/share/omf
+  register: omf_details
+
+- name: Ensure oh-my-fish is installed.
+  shell: curl -L https://get.oh-my.fish | fish
+  when: omf_details.stat.exists == False
+
+- name: Check if oh-my-zsh is already installed.
+  stat:
+    path: /Users/noran/.oh-my-zsh
+  register: omz_details
+
+- name: Ensure oh-my-zsh is installed.
+  shell: sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+  when: omz_details.stat.exists == False
