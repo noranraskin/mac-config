@@ -67,6 +67,7 @@ homebrew_installed_packages:
   - tmux
   - wget
   - google-cloud-sdk
+  - kubectl
   # Python
   - python@3.7
   - python@3.8
