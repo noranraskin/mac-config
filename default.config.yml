@@ -27,7 +27,7 @@ dockitems_persist:
     path: "/Applications/Google Chrome.app"
     pos: 3
   - name: "Brave Browser"
-    path: "/Applications/Brave Browser"
+    path: "/Applications/Brave Browser.app"
     pos: 4
   - name: "Firefox"
     path: "/Applications/Firefox.app"
@@ -36,7 +36,7 @@ dockitems_persist:
     path: "/Applications/Xcode.app"
     pos: 11
   - name: "Visual Studio Code"
-    path: "/Applications/Visual Studio Code"
+    path: "/Applications/Visual Studio Code.app"
     pos: 12
   - name: "Sublime Text"
     path: "/Applications/Sublime Text.app"
@@ -136,6 +136,7 @@ homebrew_cask_apps:
   - scroll-reverser
   - daisydisk
   - nextcloud
+  - seafile-client
   - synergy
   - cyberghost-vpn
   - steelseries-exactmouse-tool
