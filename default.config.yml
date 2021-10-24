@@ -131,15 +131,17 @@ homebrew_cask_apps:
   - league-of-legends
   # Utilities
   - carbon-copy-cloner
-  - dropzone
-  - bartender
-  - scroll-reverser
   - daisydisk
   - nextcloud
   - seafile-client
   - synergy
   - cyberghost-vpn
+  # Menu Bar Apps
+  - sensiblesidebuttons
   - steelseries-exactmouse-tool
+  - scroll-reverser
+  - bartender
+  - dropzone
   # Quicklook
   - qlmarkdown
   - qlstephen
