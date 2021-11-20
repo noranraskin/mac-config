@@ -77,6 +77,8 @@ homebrew_installed_packages:
   - miniconda
   - nginx
   - ffmpeg
+  - tree
+  - jupyterlab
   # Python
   - python@3.7
   - python@3.8
