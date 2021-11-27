@@ -59,10 +59,16 @@ dotfiles_repo: https://github.com/noranraskin/dotfiles.git
 dotfiles_repo_accept_hostkey: true
 dotfiles_repo_local_destination: ~/Developer/dotfiles
 dotfiles_files:
+  - .zshenv
+  - .zprofile
   - .zshrc
   - .gitconfig
   - .gitignore
   - .osx
+  - .tmux.conf
+  - .condarc
+  - .config/fish/conf.d/omf.fish
+  - .config/fish/config.fish
 
 homebrew_installed_packages:
   # - ansible # Installed via Pip.
@@ -73,17 +79,13 @@ homebrew_installed_packages:
   - tmux
   - wget
   - google-cloud-sdk
-  - kubectl
+  - kubernetes-cli
+  - minikube
   - miniconda
   - nginx
   - ffmpeg
   - tree
   - jupyterlab
-  # Python
-  - python@3.7
-  - python@3.8
-  - python@3.9
-  - python@3.10
 
 homebrew_taps:
   - homebrew/core
@@ -137,7 +139,6 @@ homebrew_cask_apps:
   - carbon-copy-cloner
   - daisydisk
   - nextcloud
-  - seafile-client
   - synergy
   - cyberghost-vpn
   # Menu Bar Apps
