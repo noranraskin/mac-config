@@ -9,15 +9,14 @@ This playbook installs and configures most of the software I use on my Mac for w
 ## Installation
 
   1. Ensure Apple's command line tools are installed (`xcode-select --install` to launch the installer).
-  2. [Install Ansible](https://docs.ansible.com/ansible/latest/installation_guide/index.html):
+  2. Install [homebrew](https://brew.sh/)
+     - Run this command: `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"` 
+  3. Install Ansible:
+     - I prefer to use homebrew for that too: `brew install ansible`
 
-     1. Run the following command to add Python 3 to your $PATH: `export PATH="$HOME/Library/Python/3.8/bin:/opt/homebrew/bin:$PATH"`
-     2. Upgrade Pip: `sudo pip3 install --upgrade pip`
-     3. Install Ansible: `pip3 install ansible`
-
-  3. Clone or download this repository to your local drive.
-  4. Run `ansible-galaxy install -r requirements.yml` inside this directory to install required Ansible roles.
-  5. Run `ansible-playbook main.yml --ask-become-pass` inside this directory. Enter your macOS account password when prompted for the 'BECOME' password.
+  4. Clone or download this repository to your local drive.
+  5. Run `ansible-galaxy install -r requirements.yml` inside this directory to install required Ansible roles.
+  6. Run `ansible-playbook main.yml --ask-become-pass` inside this directory. Enter your macOS account password when prompted for the 'BECOME' password.
 
 > Note: If some Homebrew commands fail, you might need to agree to Xcode's license or fix some other Brew issue. Run `brew doctor` to see if this is the case.
 
@@ -140,44 +139,29 @@ Packages (installed with Homebrew):
   - pv
   - wget
 
-My [dotfiles](https://github.com/geerlingguy/dotfiles) are also installed into the current user's home directory, including the `.osx` dotfile for configuring many aspects of macOS for better performance and ease of use. You can disable dotfiles management by setting `configure_dotfiles: no` in your configuration.
+My [dotfiles](https://github.com/noranraskin/dotfiles) are also installed into the current user's home directory, including the `.osx` dotfile for configuring many aspects of macOS for better performance and ease of use. You can disable dotfiles management by setting `configure_dotfiles: no` in your configuration.
 
 Finally, there are a few other preferences and settings added on for various apps and services.
 
-## Future additions
-
-### Things that still need to be done manually
+## Things that still need to be done manually
 
 It's my hope that I can get the rest of these things wrapped up into Ansible playbooks soon, but for now, these steps need to be completed manually (assuming you already have Xcode and Ansible installed, and have run this playbook).
 
   1. Set JJG-Term as the default Terminal theme (it's installed, but not set as default automatically).
-  3. Install all the apps that aren't yet in this setup (see below).
-  4. Remap Caps Lock to Escape (requires macOS Sierra 10.12.1+).
-  5. Set trackpad tracking rate.
-  6. Set mouse tracking rate.
-  7. Configure extra Mail and/or Calendar accounts (e.g. Google, Exchange, etc.).
+  2. Set trackpad tracking rate.
+  3. Set mouse tracking rate.
+  4. Configure extra Mail and/or Calendar accounts (e.g. Google, Exchange, etc.).
 
-### Configuration to be added:
+### Apps I have to install manually
 
-  - I have vim configuration in the repo, but I still need to add the actual installation:
-    ```
-    mkdir -p ~/.vim/autoload
-    mkdir -p ~/.vim/bundle
-    cd ~/.vim/autoload
-    curl https://raw.githubusercontent.com/tpope/vim-pathogen/master/autoload/pathogen.vim > pathogen.vim
-    cd ~/.vim/bundle
-    git clone git://github.com/scrooloose/nerdtree.git
-    ```
+  1. TextSniper
+  2. All Adobe apps (Photoshop, InDesign, Premiere Pro) thanks adobe! 😊🖕
 
 ## Testing the Playbook
 
-Many people have asked me if I often wipe my entire workstation and start from scratch just to test changes to the playbook. Nope! Instead, I posted instructions for how I build a [Mac OS X VirtualBox VM](https://github.com/geerlingguy/mac-osx-virtualbox-vm), on which I can continually run and re-run this playbook to test changes and make sure things work correctly.
+Jeff Geerling (the original author) posted instructions on how to build a [Mac OS X VirtualBox VM](https://github.com/geerlingguy/mac-osx-virtualbox-vm), on which you can continually run and re-run this playbook to test changes and make sure things work correctly.
 
-Additionally, this project is [continuously tested on GitHub Actions' macOS infrastructure](https://github.com/geerlingguy/mac-dev-playbook/actions?query=workflow%3ACI).
 
-## Ansible for DevOps
-
-Check out [Ansible for DevOps](https://www.ansiblefordevops.com/), which teaches you how to automate almost anything with Ansible.
 
 ## Author
 
