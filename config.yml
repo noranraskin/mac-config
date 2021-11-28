@@ -100,6 +100,7 @@ homebrew_taps:
   - homebrew/core
   - homebrew/cask
   - homebrew/cask-drivers
+  - nrlquaker/createzap
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
@@ -155,6 +156,7 @@ homebrew_cask_apps:
   - steelseries-exactmouse-tool
   - scroll-reverser
   - bartender
+  - alt-tab
   # Quicklook
   - qlmarkdown
   - qlstephen
