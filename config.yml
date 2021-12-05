@@ -104,6 +104,8 @@ homebrew_taps:
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
+  # Python
+  - python
   # Browsers
   - google-chrome
   - firefox
