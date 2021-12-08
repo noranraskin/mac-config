@@ -87,9 +87,11 @@ homebrew_installed_packages:
   - mosh
   - tmux
   - wget
+  - watch
   - google-cloud-sdk
   - kubernetes-cli
   - minikube
+  - helm
   - miniconda
   - nginx
   - ffmpeg
@@ -147,6 +149,7 @@ homebrew_cask_apps:
   - parsec
   - minecraft
   - league-of-legends
+  - nvidia-geforce-now
   # Utilities
   - carbon-copy-cloner
   - daisydisk
