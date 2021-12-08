@@ -1,0 +1,231 @@
+---
+downloads: ~/.ansible-downloads/
+
+configure_dotfiles: true
+configure_terminal: true
+configure_osx: true
+
+# Set to 'true' to configure custom app icons
+configure_icons: true
+icons:
+- { name: Firefox.app, url: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Firefox_logo%2C_2017.svg/1280px-Firefox_logo%2C_2017.svg.png"}
+
+
+# Set to 'true' to configure the Dock via dockutil.
+configure_dock: true
+dockitems_remove:
+  - FaceTime
+  - Maps
+  - Photos
+  - Contacts
+  - Reminders
+  - Notes
+  - Podcasts
+  - TV
+dockitems_persist:
+  - name: "Launchpad"
+    path: "/Applications/Launchpad.app"
+    pos: 1
+  - name: "Safari"
+    path: "/Applications/Safari.app"
+    pos: 2
+  - name: "Brave Browser"
+    path: "/Applications/Brave Browser.app"
+    pos: 3
+  - name: "Mail"
+    path: "/Applications/Mail.app"
+    pos: 4
+  - name: "Messages"
+    path: "/Applications/Messages.app"
+    pos: 5
+  - name: "Calendar"
+    path: "/Applications/Calendar.app"
+    pos: 6
+  - name: "Music"
+    path: "/Applications/Music.app"
+    pos: 7
+  - name: "App Store"
+    path: "/Applications/App Store.app"
+    pos: 8
+  - name: "Xcode"
+    path: "/Applications/Xcode.app"
+    pos: 9
+  - name: "Visual Studio Code"
+    path: "/Applications/Visual Studio Code.app"
+    pos: 10
+  - name: "Sublime Text"
+    path: "/Applications/Sublime Text.app"
+    pos: 11
+  - name: "Terminal"
+    path: "/Applications/Terminal.app"
+    pos: 12
+  - name: "System Preferences"
+    path: "/Applications/System Preferences.app"
+    pos: 13
+
+configure_sudoers: false
+sudoers_custom_config: ''
+# Example:
+# sudoers_custom_config: |
+#   # Allow users in admin group to use sudo with no password.
+#   %admin ALL=(ALL) NOPASSWD: ALL
+
+dotfiles_repo: https://github.com/noranraskin/dotfiles.git
+dotfiles_repo_accept_hostkey: true
+dotfiles_repo_local_destination: ~/Developer/dotfiles
+dotfiles_files:
+  - .zshenv
+  - .zprofile
+  - .zshrc
+  - .gitconfig
+  - .gitignore
+  - .osx
+  - .tmux.conf
+  - .condarc
+  - .config/fish/conf.d/omf.fish
+  - .config/fish/config.fish
+
+homebrew_installed_packages:
+  # - ansible # Installed via Pip.
+  - go
+  - gh
+  - fish
+  - mosh
+  - tmux
+  - wget
+  - watch
+  - google-cloud-sdk
+  - kubernetes-cli
+  - minikube
+  - helm
+  - miniconda
+  - nginx
+  - ffmpeg
+  - tree
+  - jupyterlab
+
+homebrew_taps:
+  - homebrew/core
+  - homebrew/cask
+  - homebrew/cask-drivers
+  - nrlquaker/createzap
+
+homebrew_cask_appdir: /Applications
+homebrew_cask_apps:
+  # Python
+  - python
+  # Browsers
+  - google-chrome
+  - firefox
+  - brave-browser
+  - tor-browser
+  - folx
+  # Media playback
+  - vlc
+  - spotify
+  # Communication
+  - discord
+  - whatsapp
+  - zoom
+  - skype
+  # Media creation
+  - adobe-creative-cloud
+  - obs
+  - handbrake
+  # Text editors and IDEs
+  - intellij-idea
+  - goland
+  - clion
+  - pycharm
+  - visual-studio-code
+  - sublime-text
+  - atom
+  # Other dev stuff
+  - lens
+  - arduino
+  - postman
+  - docker
+  - transmit
+  - sf-symbols
+  - raspberry-pi-imager
+  # Office apps
+  - microsoft-word
+  - microsoft-powerpoint
+  - microsoft-excel
+  # Games
+  - parsec
+  - minecraft
+  - league-of-legends
+  - nvidia-geforce-now
+  # Utilities
+  - carbon-copy-cloner
+  - daisydisk
+  - nextcloud
+  - synergy
+  - surfshark
+  # Menu Bar Apps
+  - sensiblesidebuttons
+  - steelseries-exactmouse-tool
+  - scroll-reverser
+  - bartender
+  - alt-tab
+  # Quicklook
+  - qlmarkdown
+  - qlstephen
+  - quicklook-json
+  - qlcolorcode
+
+# See `geerlingguy.mas` role documentation for usage instructions.
+mas_installed_apps:
+  - 497799835   # Xcode
+  - 1352778147  # Bitwarden
+  - 1319778037  # iStat Menus
+  - 441258766   # Magnet
+  - 409201541   # Pages
+  - 409183694   # Keynote
+  - 429449079   # Patterns - The Regex App
+mas_email: ""
+mas_password: ""
+
+osx_script: "~/.osx --no-restart"
+
+# Install packages from other package managers.
+# Note: You are responsible for making sure the required package managers are
+# installed, eg. through homebrew.
+composer_packages: []
+# - name: drush
+#   state: present # present/absent, default: present
+#   version: "^8.1" # default: N/A
+gem_packages: []
+# - name: bundler
+#   state: present # present/absent/latest, default: present
+#   version: "~> 1.15.1" # default: N/A
+npm_packages: []
+# - name: webpack
+#   state: present # present/absent/latest, default: present
+#   version: "^2.6" # default: N/A
+pip_packages: []
+# - name: mkdocs
+#   state: present # present/absent/latest, default: present
+#   version: "0.16.3" # default: N/A
+
+# Set to 'true' to configure Sublime Text.
+configure_sublime: true
+sublime_base_path: '~/Library/Application Support/Sublime Text'
+sublime_config_path: "Packages/User"
+sublime_package_control:
+  - "DocBlockr"
+  - "Dockerfile Syntax Highlighting"
+  - "FileDiffs"
+  - "GitHub Flavored Markdown Preview"
+  - "Jinja2"
+  - "Package Control"
+  - "PHP-Twig"
+  - "Pretty JSON"
+  - "SublimeLinter"
+  - "SublimeLinter-contrib-yamllint"
+  - "TrailingSpaces"
+  - "WordCount"
+
+# Glob pattern to ansible task files to run after all other tasks are finished.
+post_provision_tasks: []
