@@ -5,6 +5,12 @@ configure_dotfiles: true
 configure_terminal: true
 configure_osx: true
 
+# Set to 'true' to configure custom app icons
+configure_icons: true
+icons:
+- { name: Firefox.app, url: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Firefox_logo%2C_2017.svg/1280px-Firefox_logo%2C_2017.svg.png"}
+
+
 # Set to 'true' to configure the Dock via dockutil.
 configure_dock: true
 dockitems_remove:
@@ -135,6 +141,7 @@ homebrew_cask_apps:
   - sublime-text
   - atom
   # Other dev stuff
+  - lens
   - arduino
   - postman
   - docker

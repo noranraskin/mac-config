@@ -5,6 +5,11 @@ configure_dotfiles: false
 configure_terminal: false
 configure_osx: true
 
+# Set to 'true' to configure custom app icons
+configure_icons: false
+icons: []
+# - { name: Firefox.app, url: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Firefox_logo%2C_2017.svg/1280px-Firefox_logo%2C_2017.svg.png"}
+
 # Set to 'true' to configure the Dock via dockutil.
 configure_dock: false
 dockitems_remove: []
