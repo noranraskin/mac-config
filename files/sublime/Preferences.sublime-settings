@@ -344,7 +344,7 @@
     ".bundle",
     ".vagrant"
   ],
-  "font_size": 15.0,
+  "font_size": 13.0,
   "gpu_window_buffer": false,
   "gutter": true,
   "highlight_line": true,
