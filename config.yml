@@ -86,7 +86,7 @@ dotfiles_files:
   - .config/fish/config.fish
 
 homebrew_installed_packages:
-  # - ansible # Installed via Pip.
+  - python
   - go
   - gh
   - fish
@@ -103,17 +103,17 @@ homebrew_installed_packages:
   - ffmpeg
   - tree
   - jupyterlab
+  - zigmars/taps/ext4fuse
 
 homebrew_taps:
   - homebrew/core
   - homebrew/cask
   - homebrew/cask-drivers
   - nrlquaker/createzap
+  - zigmars/taps
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
-  # Python
-  - python
   # Browsers
   - google-chrome
   - firefox
@@ -148,6 +148,7 @@ homebrew_cask_apps:
   - transmit
   - sf-symbols
   - raspberry-pi-imager
+  - macfuse
   # Office apps
   - microsoft-word
   - microsoft-powerpoint
