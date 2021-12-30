@@ -104,6 +104,7 @@ homebrew_installed_packages:
   - tree
   - jupyterlab
   - zigmars/taps/ext4fuse
+  - arduino-cli
 
 homebrew_taps:
   - homebrew/core
@@ -142,7 +143,6 @@ homebrew_cask_apps:
   - atom
   # Other dev stuff
   - lens
-  - arduino
   - postman
   - docker
   - transmit
@@ -185,6 +185,7 @@ mas_installed_apps:
   - 409201541   # Pages
   - 409183694   # Keynote
   - 429449079   # Patterns - The Regex App
+  - 425424353   # The Unarchiver
 mas_email: ""
 mas_password: ""
 
