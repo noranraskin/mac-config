@@ -94,6 +94,8 @@ homebrew_installed_packages:
   - tmux
   - wget
   - watch
+  - neofetch
+  - htop
   - google-cloud-sdk
   - kubernetes-cli
   - minikube
