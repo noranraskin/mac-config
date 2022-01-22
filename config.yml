@@ -96,6 +96,10 @@ homebrew_installed_packages:
   - watch
   - neofetch
   - htop
+  - fzf
+  - ripgrep
+  - exa
+  - fd
   - google-cloud-sdk
   - kubernetes-cli
   - minikube
