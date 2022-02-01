@@ -111,6 +111,7 @@ homebrew_installed_packages:
   - jupyterlab
   - zigmars/taps/ext4fuse
   - arduino-cli
+  - cocoapods
 
 homebrew_taps:
   - homebrew/core
@@ -192,6 +193,10 @@ mas_installed_apps:
   - 409183694   # Keynote
   - 429449079   # Patterns - The Regex App
   - 425424353   # The Unarchiver
+  - 424389933   # Final Cut Pro
+  - 434290957   # Motion
+  - 424390742   # Compressor
+  - 634148309   # Logic Pro
 mas_email: ""
 mas_password: ""
 
