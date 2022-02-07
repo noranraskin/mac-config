@@ -165,6 +165,8 @@ homebrew_cask_apps:
   - minecraft
   - league-of-legends
   - nvidia-geforce-now
+  # Audio
+  - spitfire-audio
   # Utilities
   - carbon-copy-cloner
   - daisydisk
