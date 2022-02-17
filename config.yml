@@ -100,6 +100,7 @@ homebrew_installed_packages:
   - ripgrep
   - exa
   - fd
+  - lsusb
   - google-cloud-sdk
   - kubernetes-cli
   - minikube
@@ -176,7 +177,7 @@ homebrew_cask_apps:
   # Menu Bar Apps
   - sensiblesidebuttons
   - steelseries-exactmouse-tool
-  - scroll-reverser
+  - mos
   - bartender
   - alt-tab
   # Quicklook
@@ -187,6 +188,10 @@ homebrew_cask_apps:
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps:
+  - 424389933   # Final Cut Pro
+  - 434290957   # Motion
+  - 424390742   # Compressor
+  - 634148309   # Logic Pro
   - 497799835   # Xcode
   - 1352778147  # Bitwarden
   - 1319778037  # iStat Menus
@@ -195,10 +200,7 @@ mas_installed_apps:
   - 409183694   # Keynote
   - 429449079   # Patterns - The Regex App
   - 425424353   # The Unarchiver
-  - 424389933   # Final Cut Pro
-  - 434290957   # Motion
-  - 424390742   # Compressor
-  - 634148309   # Logic Pro
+  
 mas_email: ""
 mas_password: ""
 
@@ -219,10 +221,8 @@ npm_packages: []
 # - name: webpack
 #   state: present # present/absent/latest, default: present
 #   version: "^2.6" # default: N/A
-pip_packages: []
-# - name: mkdocs
-#   state: present # present/absent/latest, default: present
-#   version: "0.16.3" # default: N/A
+pip_packages:
+  - name: mcrcon
 
 # Set to 'true' to configure Sublime Text.
 configure_sublime: true
