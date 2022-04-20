@@ -103,14 +103,12 @@ homebrew_installed_packages:
   - lsusb
   - google-cloud-sdk
   - kubernetes-cli
-  - minikube
   - helm
   - miniconda
   - nginx
   - ffmpeg
   - tree
   - jupyterlab
-  - zigmars/taps/ext4fuse
   - arduino-cli
   - cocoapods
 
@@ -119,7 +117,6 @@ homebrew_taps:
   - homebrew/cask
   - homebrew/cask-drivers
   - nrlquaker/createzap
-  - zigmars/taps
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
@@ -156,7 +153,6 @@ homebrew_cask_apps:
   - transmit
   - sf-symbols
   - raspberry-pi-imager
-  - macfuse
   # Office apps
   - microsoft-word
   - microsoft-powerpoint
@@ -177,7 +173,6 @@ homebrew_cask_apps:
   # Menu Bar Apps
   - sensiblesidebuttons
   - steelseries-exactmouse-tool
-  - mos
   - bartender
   - alt-tab
   # Quicklook
