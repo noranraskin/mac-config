@@ -104,7 +104,6 @@ homebrew_installed_packages:
   # - google-cloud-sdk # Also making problems
   - kubernetes-cli
   - helm
-  - miniforge
   - nginx
   - ffmpeg
   - tree
@@ -152,6 +151,7 @@ homebrew_cask_apps:
   - docker
   - transmit
   - sf-symbols
+  - miniforge
   # Office apps
   - microsoft-word
   - microsoft-powerpoint
