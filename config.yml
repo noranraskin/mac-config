@@ -152,7 +152,6 @@ homebrew_cask_apps:
   - docker
   - transmit
   - sf-symbols
-  - raspberry-pi-imager
   # Office apps
   - microsoft-word
   - microsoft-powerpoint
