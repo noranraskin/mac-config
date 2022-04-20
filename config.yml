@@ -164,7 +164,7 @@ homebrew_cask_apps:
   # Games
   - parsec
   - minecraft
-  - league-of-legends
+  - steam
   - nvidia-geforce-now
   # Audio
   - spitfire-audio
@@ -200,7 +200,7 @@ mas_installed_apps:
   - 409183694   # Keynote
   - 429449079   # Patterns - The Regex App
   - 425424353   # The Unarchiver
-  
+
 mas_email: ""
 mas_password: ""
 
