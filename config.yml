@@ -101,10 +101,10 @@ homebrew_installed_packages:
   - exa
   - fd
   - lsusb
-  - google-cloud-sdk
+  # - google-cloud-sdk # Also making problems
   - kubernetes-cli
   - helm
-  - miniconda
+  - miniforge
   - nginx
   - ffmpeg
   - tree
@@ -167,7 +167,7 @@ homebrew_cask_apps:
   - carbon-copy-cloner
   - daisydisk
   - nextcloud
-  - synergy
+  # - synergy # Cask was removed
   - surfshark
   # Menu Bar Apps
   - sensiblesidebuttons
