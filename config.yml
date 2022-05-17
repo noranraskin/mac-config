@@ -88,8 +88,10 @@ dotfiles_files:
 homebrew_installed_packages:
   - python
   - go
+  - java
   - gh
   - fish
+  - carthage
   - mosh
   - tmux
   - wget
@@ -144,7 +146,6 @@ homebrew_cask_apps:
   - pycharm
   - visual-studio-code
   - sublime-text
-  - atom
   # Other dev stuff
   - lens
   - postman
@@ -159,6 +160,7 @@ homebrew_cask_apps:
   # Games
   - parsec
   - minecraft
+  - multimc
   - steam
   - nvidia-geforce-now
   # Audio
@@ -174,11 +176,15 @@ homebrew_cask_apps:
   - steelseries-exactmouse-tool
   - bartender
   - alt-tab
+  - textsniper
+  - lunar
   # Quicklook
-  - qlmarkdown
+  # - qlmarkdown
   - qlstephen
   - quicklook-json
-  - qlcolorcode
+  # - qlcolorcode doesn't seem to work
+  # Other
+  - autodesk-fusion360
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps:
@@ -192,7 +198,7 @@ mas_installed_apps:
   - 441258766   # Magnet
   - 409201541   # Pages
   - 409183694   # Keynote
-  - 429449079   # Patterns - The Regex App
+  # - 429449079   # Patterns - The Regex App
   - 425424353   # The Unarchiver
 
 mas_email: ""

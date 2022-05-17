@@ -33,7 +33,7 @@
   become: yes
   user:
     name: "{{ the_user }}"
-    shell: "/usr/local/bin/fish"
+    shell: "/opt/homebrew/bin/fish"
 
 - name: Check if oh-my-fish is already installed.
   stat:
