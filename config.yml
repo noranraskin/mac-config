@@ -22,12 +22,15 @@ dockitems_remove:
   - Notes
   - Podcasts
   - TV
+  - Keynote
+  - Numbers
+  - Pages
 dockitems_persist:
   - name: "Launchpad"
     path: "/Applications/Launchpad.app"
     pos: 1
-  - name: "Safari"
-    path: "/Applications/Safari.app"
+  - name: "Orion"
+    path: "/Applications/Orion.app"
     pos: 2
   - name: "Brave Browser"
     path: "/Applications/Brave Browser.app"
@@ -88,7 +91,8 @@ dotfiles_files:
 homebrew_installed_packages:
   - python
   - go
-  - java
+  - openjdk
+  - openjdk@17
   - gh
   - fish
   - carthage
@@ -122,6 +126,7 @@ homebrew_taps:
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
   # Browsers
+  - orion
   - google-chrome
   - firefox
   - brave-browser
@@ -136,7 +141,7 @@ homebrew_cask_apps:
   - zoom
   - skype
   # Media creation
-  - adobe-creative-cloud
+  # - adobe-creative-cloud # Making problems
   - obs
   - handbrake
   # Text editors and IDEs
@@ -172,19 +177,18 @@ homebrew_cask_apps:
   # - synergy # Cask was removed
   - surfshark
   # Menu Bar Apps
-  - sensiblesidebuttons
-  - steelseries-exactmouse-tool
+  - linearmouse
   - bartender
   - alt-tab
   - textsniper
   - lunar
   # Quicklook
   # - qlmarkdown
-  - qlstephen
-  - quicklook-json
+  # - qlstephen
+  # - quicklook-json
   # - qlcolorcode doesn't seem to work
   # Other
-  - autodesk-fusion360
+  # - autodesk-fusion360
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps:
